@@ -1,14 +1,14 @@
+
 import streamlit as st
 
 def login():
     st.sidebar.header("🔐 Login")
     username = st.sidebar.text_input("Username")
     password = st.sidebar.text_input("Password", type="password")
-
     if st.sidebar.button("Login"):
         if username == "admin" and password == "pass123":
             st.session_state["auth"] = True
-            st.success("Login successful! Please refresh manually if needed.")
+            st.success("Login successful! Please refresh if needed.")
         else:
             st.sidebar.error("Invalid credentials")
 
