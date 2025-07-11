@@ -8,7 +8,7 @@ def login():
     if st.sidebar.button("Login"):
         if username == "admin" and password == "pass123":
             st.session_state["auth"] = True
-            st.success("Login successful! Please refresh if needed.")
+            st.success("Login successful!")
         else:
             st.sidebar.error("Invalid credentials")
 
